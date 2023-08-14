@@ -44,3 +44,72 @@ console.log(10 > 5 && 20 < 5);
 
 console.log(10 > 5 || 20 > 5);
 console.log(10 > 5 || 20 < 5);
+
+// Conversão de tipos
+
+const meuNumero2 = "50";
+console.log(typeof meuNumero2);
+const meuNumeroConvertido = Number(meuNumero2);
+console.log(typeof meuNumeroConvertido);
+
+const meuNumero4 = 40;
+const meuNumeroConvertido4 = String(meuNumero4);
+console.log(typeof meuNumeroConvertido4);
+
+// Estrutura de condição - if, else, else if
+
+const idade = 21;
+
+if (idade < 15){
+    console.log("Criança");
+} else if (idade < 20) {
+    console.log("Adolescente");
+} else {
+    console.log("Adulto");
+}
+
+// Switch
+
+const fruta = "Melancia";
+
+switch (fruta){
+    case "Banana":
+        console.log("Banana é a futa!");
+        break;
+    case "Melancia":
+        console.log("Melancia é a fruta!");
+        break;
+    case "Biscoito":
+        console.log("Biscoito é massa!");
+        break;
+    default:
+        console.log("Fruta ou biscoito não encontrada!");
+}
+
+// Estruturas de repetição
+// 1, 2, 3, 4, 5, 6... => Dependendo de uma condição(Tarefas repetitivas)
+
+// Contador, Condição de limite e Incremento
+for (let i = 0; i < 5; i++){
+    console.log("O valor de i é " + i);
+}
+
+// While
+let k = 0;
+
+while(k < 5){
+    console.log("O valor de K: " + k);
+    k++;
+}
+
+// do while
+
+let j = 0;
+
+do {
+    console.log("O valor de J é: " + j);
+    j++;
+
+} while(j < 5);
+
+// Funções
