@@ -113,3 +113,88 @@ do {
 } while(j < 5);
 
 // Funções
+// function nome(arg1, arg2) { corpo }
+function cumprimentar(nome) {
+    console.log("Olá " + nome);
+}
+
+// invocação = nome()
+cumprimentar("Caio");
+
+// Algo que talvez seja cavernoso porque estou com Python na cabeça e isso é perfeitamente normal KKKK
+function soma(numero1, numero2){
+    let resultado = numero1 + numero2;
+
+    console.log("O resultado de ", numero1, "+", numero2, "=" ,resultado);
+}
+
+soma(10, 54);
+
+// Escopo de variáveis
+let cor = "azul";
+
+function mostrarCor(){
+    let cor = "verde";
+    console.log(cor)
+}
+
+console.log(cor);
+mostrarCor();
+
+// Hoisting = içamento
+testHoisting();
+
+function testHoisting(){
+    console.log("Deu certo!")
+}
+
+// Arrow function
+const testeArrow = () => console.log("Isso também uma função.");
+
+// => fatArrow
+// Depois você escreve o que a função irá fazer
+// Também poderia ter argumentos no parenteses
+
+testeArrow();
+
+// Array, listas
+const numeros = [1, 2, 3, 4, 5];
+console.log(numeros);
+console.log(numeros[2])
+console.log(numeros[0])
+
+// Push coloca algum elemento no Array
+
+numeros.push(6);
+console.log(numeros)
+
+// Pop tira o último elemento do Array
+
+numeros.pop()
+console.log(numeros)
+
+// Strings - Concatenação
+const minhaStringNova = 'Olá, mundo!';
+
+const minhaString3 = minhaStringNova + " Como você está?";
+
+console.log(minhaString3);
+
+// Strings - Interpolação
+const minhaString4 = `${minhaStringNova} Como você está?`;
+console.log(minhaString4);
+
+console.log(minhaString4.length); // Quantidade de caracteres
+console.log(minhaString4[5]); // Caractere que está no indice tal
+console.log(minhaString4.toUpperCase()); // Caixa Alta
+
+// Data e Hora
+const agora = Date();
+console.log(agora);
+
+// Os meses começam a contar do 0 (janeiro = 0, fevereiro = 1) 
+
+// Math
+console.log(Math.PI); // Valor de PI
+console.log(Math.round(3.6)) // Teto "Famoso arredondar pra cima"
+console.log(Math.sqrt(16)); // Raiz quadrada

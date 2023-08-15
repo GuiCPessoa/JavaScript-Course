@@ -8,6 +8,8 @@ JavaScript é uma linguagem de tipagem dinâmica
 
 JS interpreta vários dados como objetos
 
+JavaScript considera valores vazios como false, vice e versa
+
 Eu posso declarar uma variável e não inicializar ela (Ex: `let nome;`) se você colocar um `console.log(nome)` vai resultar `Undefined`, porque existe um valor padrão para esse caso (um valor que indica ao JS que a variável não tem valor)
 
 Não podemos **redeclarar** variáveis com `Let`
@@ -42,3 +44,27 @@ Nesse aqui você só precisa colocar onde vai terminar, qual vai ser a condiçã
 **Do while:**
 
 Esse se torna um pouco diferente mas o principio é o mesmo. Você define a variável fora do laço, coloca o (Do) e tudo o que ele precisa executar vai estar dentro do (Do) e no fim, o while vai conter a condição de limite do laço. Vai executar o Do até o While ser verdadeiro *Veja o exemplo que está no código Fundamentos*
+
+## Funções
+As variáveis guardamos um valor para usarmos depois e a depender do caso, usar esse valor várias vezes. Nas funções guardamos um pedaço de código para usa-lo depois
+
+A construção da função se dar por (function nome(arg1, arg2) { corpo }) esses argumentos são variáveis que são passados para a função e que podem ser utilizados dentro dela. 
+
+## Hoisting
+(içamento, em português) resumindo, as variáveis e funções são movidas para o topo do código (por mais que você escreva elas na linha 100 ou 350, elas são movidas lógicamente para o topo, pegou a visão?) isso permite que você declare variáveis e funções antes de criar elas (visualmente falando) *Veja o exemplo que está no código Fundamentos*
+
+O JavaScript sempre vai elevar as declarações NUNCA as inicializações, se essa variável for declarada e inicializada após usá-la, o valor ser undefined. 
+
+`console.log(num);`
+`var num;`
+`num = 6;`
+
+Tendeu?
+Você iria precisar colocar o num = 6 em cima do console.log(num) para ele retornar o valor.
+
+## Arrow function
+Funciona como uma função mas possui alguns detalhes a mais.
+=> fatArrow, depois você escreve o que a função irá fazer. Também poderia ter argumentos no parenteses
+`const testeArrow  = () => console.log("Isso também é uma função")`
+
+
