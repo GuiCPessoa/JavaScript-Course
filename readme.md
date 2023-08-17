@@ -68,3 +68,22 @@ Funciona como uma função mas possui alguns detalhes a mais.
 `const testeArrow  = () => console.log("Isso também é uma função")`
 
 
+# Fundamentos avançados
+
+## Manipulação de Arrays
+`push` adiciona algum elemento no final do array
+`unshift` adiciona algum elemento no começo do array
+`shit` retira o primeiro elemento do array
+
+`.find()`, executa uma função (varre cada elemento do array) e vai encontrar algum item baseado em algum critério, mas ele só vai retornar o primeiro elemento do critério. Se nenhum elemento for encontrado ele retorna undefined.
+
+`.filter()`, cria uma nova matriz preenchida com os elementos que passam pelo critério, retorna TODOS os elementos que passaram
+
+## Callback
+uma função que argumenta outra função. Você pode tanto usar a função como argumento (função já criada) ou pode cria-la dentro do argumento da função: *Olha exemplo no codigo `avancando.js`*
+
+Funções JavaScript são executadas na sequência em que são chamadas. Não na sequeência que são definidos.
+
+Os callbacks são realmente uteis em funções assíncronas, onde uma função tem que esperar por outra função (como esperar o carregamento de um arquivo)
+
+## Promises 
