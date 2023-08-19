@@ -87,3 +87,6 @@ Funções JavaScript são executadas na sequência em que são chamadas. Não na
 Os callbacks são realmente uteis em funções assíncronas, onde uma função tem que esperar por outra função (como esperar o carregamento de um arquivo)
 
 ## Promises 
+Uma maneira de lidar com operações assíncronas de forma mais organizada e controlada. Uma promise é um objeto que representa uma operação que pode estar pendente, resolvida ou rejeitada. Em JavaScript, muitas vezes você precisa executar tarefas que levam tempo, como fazer chamadas de rede, buscar dados de um banco de dados ou ler arquivos. Durante esse tempo, o programa não precisa ficar bloqueado, esperando pela conclusão da operação. As Promises ajudam a lidar com esse tipo de situação. 
+
+*Recomendado usar Try Catch com Async Await, o código fica muito mais limpo e mais fácil de ser utilizado*
