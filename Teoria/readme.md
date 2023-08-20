@@ -94,3 +94,16 @@ Uma maneira de lidar com operações assíncronas de forma mais organizada e con
 # DOM - Document Object Model
 
 Ao selecionar elementos o método `.getElementById` é um pouco antigo, atualmente a melhor forma é usar o `querySelector` que permite pegar o seletor de CSS
+
+Manipulação de classes
+
+`.add` 
+`.remove`
+`.toggle`
+
+Cada elemento no DOM é um node, por exemplo, o body é o nó pai do h1, a, etc... Navegação entre nós é navegação entre elementos
+
+## Propagação de Eventos
+Eventos no elemento Pai propagam para o filho. Seja bem especifico nos elementos
+
+`event.stopPropagation()` O elemento filho executa apenas o evento dele, ele entende que outros elementos possam desencadear novos eventos e isso pode ser um problema, ele para a execução e executa APENAS o evento do FILHO.

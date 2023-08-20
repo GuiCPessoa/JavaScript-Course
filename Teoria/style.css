@@ -50,3 +50,7 @@ body {
     margin: 20px 0;
     color: #333;
   }
+
+  #meuId.novaClasse{
+    color: red;
+  }
